@@ -5,6 +5,7 @@ import 'package:insta_clone/responsive/mobile_screen_layout.dart';
 import 'package:insta_clone/responsive/web_screen_layout.dart';
 import 'utils/colors.dart';
 import 'responsive/responsive_layout_screen.dart';
+import 'package:insta_clone/screens/login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,10 +34,12 @@ class Landing extends StatelessWidget {
       title: "Instagram clone",
       theme: ThemeData.dark()
           .copyWith(scaffoldBackgroundColor: mobileBackgroundColor),
-      home: const ResponsiveLayout(
-        mobileScreenLayout: MobileScreenLayout(),
-        webScreenLayout: WebScreenLayout(),
-      ),
+      home: LoginScreen(), // const ResponsiveLayout(
+      //   // loginScreenLayout:LoginScreen(),
+      //   mobileScreenLayout: MobileScreenLayout(),
+      //   webScreenLayout: WebScreenLayout(),
+      //   // loginScreenLayout: LoginScreen(),
+      // ),
     );
   }
 }
