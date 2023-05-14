@@ -20,6 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Flexible(child: Container(), flex: 1),
               //svg image
               SvgPicture.asset(
                 'assets/ic_instagram.svg',
@@ -30,6 +31,8 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 64,
               ),
+              TextFieldInput()
+              hint,
               //input pwd
               //login button
             ],
